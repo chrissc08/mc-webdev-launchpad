@@ -28,7 +28,7 @@ const AboutPage = () => {
               We help local businesses look legit online
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              MC WebDev was started with a simple idea: small businesses deserve websites that are just as professional as the big guys — without the big price tag.
+              MC WebDev was started by a two-person team of recent college graduates with a simple idea: small businesses deserve websites that are just as professional as the big guys — without the big price tag.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               We work with barbershops, restaurants, contractors, auto shops, and service businesses across Orange County, NY. Our mockup-first process means you see exactly what you're getting before you spend a dime. No surprises. No jargon. Just clean, fast websites that bring in more customers.
