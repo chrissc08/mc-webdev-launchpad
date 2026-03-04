@@ -23,7 +23,7 @@ const WorkPage = () => {
   return (
     <>
       <Header />
-      <main className="pt-24">
+      <main className="pt-28">
         <section className="section-padding">
           <div className="container-tight">
             <SectionHeader

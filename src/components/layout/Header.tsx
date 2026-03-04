@@ -18,10 +18,10 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <div className="container-tight flex items-center justify-between h-24 px-4 sm:px-6 lg:px-8">
+      <div className="flex items-center justify-between h-28 px-6 sm:px-10 lg:px-16">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
-          <img src={logo} alt="MC WebDev" className="h-24 w-auto" />
+          <img src={logo} alt="MC WebDev" className="h-28 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
@@ -60,7 +60,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden fixed inset-0 top-24 bg-background z-40 flex flex-col">
+        <div className="md:hidden fixed inset-0 top-28 bg-background z-40 flex flex-col">
           <nav className="flex flex-col items-center justify-center flex-1 gap-6">
             {navItems.map((item) => (
               <Link
