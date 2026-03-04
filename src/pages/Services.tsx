@@ -37,12 +37,6 @@ const services = [
     timeline: "Included with every build",
   },
   {
-    title: "Speed & Performance Optimization",
-    desc: "Fast sites rank better and convert more. We optimize every build for speed.",
-    bullets: ["Image compression", "Code minification", "Lazy loading", "Core Web Vitals audit"],
-    timeline: "Included with every build",
-  },
-  {
     title: "Maintenance Plan (Optional)",
     desc: "Ongoing updates, security patches, and small content changes handled for you monthly.",
     bullets: ["Monthly content updates", "Security monitoring", "Uptime checks", "Priority support"],
