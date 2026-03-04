@@ -69,7 +69,7 @@ const PricingPage = () => {
   return (
     <>
       <Header />
-      <main className="pt-16">
+      <main className="pt-20">
         <section className="section-padding">
           <div className="container-tight">
             <SectionHeader
