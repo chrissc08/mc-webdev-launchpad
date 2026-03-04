@@ -21,7 +21,7 @@ const Header = () => {
       <div className="container-tight flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
-          <img src={logo} alt="MC WebDev" className="h-10 w-auto" />
+          <img src={logo} alt="MC WebDev" className="h-14 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
