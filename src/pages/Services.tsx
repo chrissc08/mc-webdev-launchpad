@@ -48,7 +48,7 @@ const ServicesPage = () => {
   return (
     <>
       <Header />
-      <main className="pt-20">
+      <main className="pt-24">
         {/* Intro */}
         <section className="section-padding bg-secondary text-secondary-foreground">
           <div className="container-tight">

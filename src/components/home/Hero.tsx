@@ -12,7 +12,7 @@ const trustBadges = [
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-background pt-28 pb-16 sm:pt-36 sm:pb-24">
+    <section className="relative overflow-hidden bg-background pt-32 pb-16 sm:pt-40 sm:pb-24">
       <div className="container-tight px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Copy */}
