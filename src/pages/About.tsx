@@ -3,7 +3,9 @@ import Footer from "@/components/layout/Footer";
 import SectionHeader from "@/components/shared/SectionHeader";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Zap, Smartphone, Code2, LayoutGrid, MapPin } from "lucide-react";
+import { Zap, Smartphone, Code2, LayoutGrid, MapPin, GraduationCap } from "lucide-react";
+import sunyCortlandLogo from "@/assets/suny-cortland-logo.png";
+import sienaCollegeLogo from "@/assets/siena-college-logo.png";
 
 const reasons = [
   { icon: Zap, title: "Mockup-first process", desc: "See your site before you commit. We design a free demo so there are no surprises." },
@@ -33,6 +35,18 @@ const AboutPage = () => {
             <p className="mt-4 text-muted-foreground leading-relaxed">
               We work with barbershops, restaurants, contractors, auto shops, and service businesses across Hudson Valley, NY. Our mockup-first process means you see exactly what you're getting before you spend a dime. No surprises. No jargon. Just clean, fast websites that bring in more customers.
             </p>
+
+            {/* Education Logos */}
+            <div className="mt-10 pt-8 border-t border-border">
+              <div className="flex items-center gap-2 mb-6 text-muted-foreground">
+                <GraduationCap size={18} />
+                <span className="text-sm font-medium">Where we studied</span>
+              </div>
+              <div className="flex items-center justify-start gap-10 sm:gap-16">
+                <img src={sunyCortlandLogo} alt="SUNY Cortland" className="h-16 sm:h-20 w-auto object-contain" />
+                <img src={sienaCollegeLogo} alt="Siena College" className="h-16 sm:h-20 w-auto object-contain" />
+              </div>
+            </div>
           </div>
         </section>
 
