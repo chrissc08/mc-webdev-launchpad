@@ -43,7 +43,7 @@ const AboutPage = () => {
                 <span className="text-sm font-medium">Where we studied</span>
               </div>
               <div className="flex items-center justify-start gap-10 sm:gap-16">
-                <img src={sunyCortlandLogo} alt="SUNY Cortland" className="h-24 sm:h-32 w-auto object-contain" />
+                <img src={sunyCortlandLogo} alt="SUNY Cortland" className="h-32 sm:h-40 w-auto object-contain" />
                 <img src={sienaCollegeLogo} alt="Siena College" className="h-24 sm:h-32 w-auto object-contain" />
               </div>
             </div>
