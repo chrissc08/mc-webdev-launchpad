@@ -60,7 +60,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden fixed inset-0 top-36 bg-background z-40 flex flex-col">
+        <div className="md:hidden fixed inset-0 top-44 bg-background z-40 flex flex-col">
           <nav className="flex flex-col items-center justify-center flex-1 gap-6">
             {navItems.map((item) => (
               <Link
