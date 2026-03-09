@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Mike R.",
     business: "Hudson Valley Barbershop",
-    quote: "MC WebDev took our outdated site and turned it into a booking machine. We tripled our appointments in the first month.",
+    quote: "Hudson Valley WebDev took our outdated site and turned it into a booking machine. We tripled our appointments in the first month.",
     rating: 5,
   },
   {
