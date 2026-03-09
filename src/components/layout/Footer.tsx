@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-6 border-t border-secondary-foreground/10 text-center text-xs text-secondary-foreground/40">
-          © {new Date().getFullYear()} MC WebDev. All rights reserved.
+          © {new Date().getFullYear()} Hudson Valley WebDev. All rights reserved.
         </div>
       </div>
     </footer>
