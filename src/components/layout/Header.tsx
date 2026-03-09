@@ -18,10 +18,10 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
-      <div className="flex items-center justify-between h-28 px-6 sm:px-10 lg:px-16">
+      <div className="flex items-center justify-between h-36 px-6 sm:px-10 lg:px-16">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
-          <img src={logo} alt="Hudson Valley WebDev" className="h-28 w-auto" />
+          <img src={logo} alt="Hudson Valley WebDev" className="h-36 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
