@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="font-heading text-xl font-bold tracking-tight">
-              MC<span className="text-primary">WebDev</span>
+              Hudson Valley<span className="text-primary"> WebDev</span>
             </Link>
             <p className="mt-3 text-sm text-secondary-foreground/60 leading-relaxed">
               High-converting websites for local businesses in Hudson Valley, NY.
@@ -67,7 +67,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wider text-secondary-foreground/50">Contact</h4>
             <ul className="space-y-2 text-sm text-secondary-foreground/70">
-              <li>hello@mcwebdev.com</li>
+              <li>hello@hudsonvalleywebdev.com</li>
               <li>(845) 555-0123</li>
               <li>Hudson Valley, NY</li>
             </ul>
@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-6 border-t border-secondary-foreground/10 text-center text-xs text-secondary-foreground/40">
-          © {new Date().getFullYear()} MC WebDev. All rights reserved.
+          © {new Date().getFullYear()} Hudson Valley WebDev. All rights reserved.
         </div>
       </div>
     </footer>

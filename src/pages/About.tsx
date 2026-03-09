@@ -30,7 +30,7 @@ const AboutPage = () => {
               We help local businesses look legit online
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              MC WebDev was started by a two-person team of recent college graduates with a simple idea: small businesses deserve websites that are just as professional as the big guys — without the big price tag.
+              Hudson Valley WebDev was started by a two-person team of recent college graduates with a simple idea: small businesses deserve websites that are just as professional as the big guys — without the big price tag.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               We work with barbershops, restaurants, contractors, auto shops, and service businesses across Hudson Valley, NY. Our mockup-first process means you see exactly what you're getting before you spend a dime. No surprises. No jargon. Just clean, fast websites that bring in more customers.
@@ -50,12 +50,12 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* Why MC WebDev */}
+        {/* Why Hudson Valley WebDev */}
         <section className="section-padding bg-accent">
           <div className="container-tight">
             <SectionHeader
               badge="Why Us"
-              title="Why work with MC WebDev?"
+              title="Why work with Hudson Valley WebDev?"
               description="We're not a faceless agency. We're your neighbor — building sites that work."
             />
             <div className="grid sm:grid-cols-2 gap-6">
