@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="font-heading text-xl font-bold tracking-tight">
-              MC<span className="text-primary">WebDev</span>
+              Hudson Valley<span className="text-primary"> WebDev</span>
             </Link>
             <p className="mt-3 text-sm text-secondary-foreground/60 leading-relaxed">
               High-converting websites for local businesses in Hudson Valley, NY.
