@@ -18,7 +18,7 @@ const AboutPage = () => {
   return (
     <>
       <Header />
-      <main className="pt-28">
+      <main className="pt-36">
         {/* Story */}
         <section className="section-padding">
           <div className="container-tight max-w-3xl">
