@@ -17,7 +17,7 @@ const ContactPage = () => {
   return (
     <>
       <Header />
-      <main className="pt-28">
+      <main className="pt-36">
         <section className="section-padding">
           <div className="container-tight">
             <div className="grid lg:grid-cols-2 gap-12">
