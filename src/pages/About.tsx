@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Zap, Smartphone, Code2, LayoutGrid, MapPin, GraduationCap } from "lucide-react";
 import sunyCortlandLogo from "@/assets/suny-cortland-logo.png";
 import sienaCollegeLogo from "@/assets/siena-college-logo.png";
+import binghamtonLogo from "@/assets/binghamton-university-logo.png";
 
 const reasons = [
   { icon: Zap, title: "Mockup-first process", desc: "See your site before you commit. We design a free demo so there are no surprises." },
@@ -30,7 +31,7 @@ const AboutPage = () => {
               We help local businesses look legit online
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Hudson Valley WebDev was started by a two-person team of recent college graduates with a simple idea: small businesses deserve websites that are just as professional as the big guys — without the big price tag.
+              Hudson Valley WebDev was started by a three-person team of recent college graduates with a simple idea: small businesses deserve websites that are just as professional as the big guys — without the big price tag.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               We work with barbershops, restaurants, contractors, auto shops, and service businesses across Hudson Valley, NY. Our mockup-first process means you see exactly what you're getting before you spend a dime. No surprises. No jargon. Just clean, fast websites that bring in more customers.
@@ -45,6 +46,7 @@ const AboutPage = () => {
               <div className="flex items-center justify-start gap-10 sm:gap-16">
                 <img src={sunyCortlandLogo} alt="SUNY Cortland" className="h-32 sm:h-40 w-auto object-contain" />
                 <img src={sienaCollegeLogo} alt="Siena College" className="h-24 sm:h-32 w-auto object-contain" />
+                <img src={binghamtonLogo} alt="Binghamton University" className="h-24 sm:h-32 w-auto object-contain" />
               </div>
             </div>
           </div>
