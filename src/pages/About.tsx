@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Zap, Smartphone, Code2, LayoutGrid, MapPin, GraduationCap } from "lucide-react";
 import sunyCortlandLogo from "@/assets/suny-cortland-logo.png";
 import sienaCollegeLogo from "@/assets/siena-college-logo.png";
+import binghamtonLogo from "@/assets/binghamton-university-logo.png";
 
 const reasons = [
   { icon: Zap, title: "Mockup-first process", desc: "See your site before you commit. We design a free demo so there are no surprises." },
