@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { MapPin, Zap, Smartphone, Search, RefreshCw } from "lucide-react";
+import { MapPin, Zap, Smartphone, Search } from "lucide-react";
 import heroImage from "@/assets/hero-mockup.jpg";
 
 const trustBadges = [
   { icon: Zap, label: "Fast Delivery" },
   { icon: Smartphone, label: "Mobile-First" },
   { icon: Search, label: "SEO-Ready" },
-  { icon: RefreshCw, label: "Unlimited Revisions" },
 ];
 
 const Hero = () => {
