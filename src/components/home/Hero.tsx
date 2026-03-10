@@ -61,7 +61,7 @@ const Hero = () => {
         </div>
 
         {/* Trust badges */}
-        <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="mt-16 grid grid-cols-3 gap-4 max-w-2xl mx-auto">
           {trustBadges.map((badge) => (
             <div key={badge.label} className="flex items-center gap-3 p-4 rounded-xl bg-accent">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
