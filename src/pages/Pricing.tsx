@@ -135,6 +135,22 @@ const PricingPage = () => {
               </ul>
             </div>
 
+            {/* Payment Methods */}
+            <div className="mt-16 max-w-2xl mx-auto text-center">
+              <h3 className="font-heading text-2xl font-bold text-foreground mb-4">Payment Options</h3>
+              <p className="text-muted-foreground mb-6">We accept multiple payment methods for your convenience</p>
+              <div className="flex flex-wrap justify-center gap-4">
+                {["Zelle", "Venmo", "Check", "Cash"].map((method) => (
+                  <span
+                    key={method}
+                    className="px-4 py-2 rounded-full bg-secondary text-secondary-foreground font-medium"
+                  >
+                    {method}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             <p className="mt-10 text-center text-sm text-muted-foreground italic">
               Starting prices shown. Final quote depends on scope and integrations.
             </p>
