@@ -24,22 +24,62 @@ const Header = () => {
           <img src={logo} alt="Hudson Valley WebDev" className="h-44 w-auto" />
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-1">
-          {navItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                location.pathname === item.path
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        {/* Desktop Nav with Mountain Range */}
+        <div className="hidden md:flex items-center relative">
+          {/* Mountain range SVG behind nav */}
+          <svg
+            className="absolute inset-0 w-full h-full pointer-events-none"
+            viewBox="0 0 500 100"
+            preserveAspectRatio="xMidYMax slice"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="mountain-grad-1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="hsl(var(--navy))" stopOpacity="0.07" />
+                <stop offset="100%" stopColor="hsl(var(--navy))" stopOpacity="0.02" />
+              </linearGradient>
+              <linearGradient id="mountain-grad-2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.08" />
+                <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.01" />
+              </linearGradient>
+              <linearGradient id="mountain-grad-3" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="hsl(var(--navy))" stopOpacity="0.04" />
+                <stop offset="100%" stopColor="hsl(var(--navy))" stopOpacity="0.01" />
+              </linearGradient>
+            </defs>
+            {/* Back range */}
+            <polygon
+              points="0,100 40,45 80,65 130,30 180,55 220,25 270,50 310,35 360,60 400,20 440,50 500,40 500,100"
+              fill="url(#mountain-grad-3)"
+            />
+            {/* Mid range */}
+            <polygon
+              points="0,100 30,60 70,75 120,40 170,62 210,35 260,58 300,42 350,65 390,30 430,55 470,45 500,55 500,100"
+              fill="url(#mountain-grad-2)"
+            />
+            {/* Front range - matches logo's angular peaks */}
+            <polygon
+              points="0,100 20,70 60,82 100,50 150,70 190,45 240,68 280,52 330,72 370,40 410,62 450,55 500,65 500,100"
+              fill="url(#mountain-grad-1)"
+            />
+          </svg>
+
+          <nav className="relative z-10 flex items-center gap-1">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  location.pathname === item.path
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
