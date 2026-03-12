@@ -25,42 +25,41 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav with Mountain Range */}
-        <div className="hidden md:flex items-center relative py-2">
+        <div className="hidden md:flex items-center relative">
           {/* Mountain range SVG behind nav */}
           <svg
-            className="absolute -inset-x-8 -inset-y-4 pointer-events-none"
-            viewBox="0 0 500 120"
-            preserveAspectRatio="xMidYMid slice"
+            className="absolute inset-0 w-full h-full pointer-events-none"
+            viewBox="0 0 500 100"
+            preserveAspectRatio="xMidYMax slice"
             aria-hidden="true"
-            style={{ width: 'calc(100% + 4rem)', height: 'calc(100% + 2rem)' }}
           >
             <defs>
               <linearGradient id="mountain-grad-1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="hsl(var(--navy))" stopOpacity="0.18" />
-                <stop offset="100%" stopColor="hsl(var(--navy))" stopOpacity="0.05" />
+                <stop offset="0%" stopColor="hsl(var(--navy))" stopOpacity="0.07" />
+                <stop offset="100%" stopColor="hsl(var(--navy))" stopOpacity="0.02" />
               </linearGradient>
               <linearGradient id="mountain-grad-2" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.2" />
-                <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.04" />
+                <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.08" />
+                <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.01" />
               </linearGradient>
               <linearGradient id="mountain-grad-3" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="hsl(var(--navy))" stopOpacity="0.12" />
-                <stop offset="100%" stopColor="hsl(var(--navy))" stopOpacity="0.03" />
+                <stop offset="0%" stopColor="hsl(var(--navy))" stopOpacity="0.04" />
+                <stop offset="100%" stopColor="hsl(var(--navy))" stopOpacity="0.01" />
               </linearGradient>
             </defs>
             {/* Back range */}
             <polygon
-              points="0,120 40,50 80,70 130,30 180,58 220,20 270,52 310,35 360,62 400,15 440,48 500,38 500,120"
+              points="0,100 40,45 80,65 130,30 180,55 220,25 270,50 310,35 360,60 400,20 440,50 500,40 500,100"
               fill="url(#mountain-grad-3)"
             />
             {/* Mid range */}
             <polygon
-              points="0,120 30,62 70,78 120,42 170,65 210,32 260,60 300,44 350,68 390,28 430,56 470,46 500,58 500,120"
+              points="0,100 30,60 70,75 120,40 170,62 210,35 260,58 300,42 350,65 390,30 430,55 470,45 500,55 500,100"
               fill="url(#mountain-grad-2)"
             />
-            {/* Front range */}
+            {/* Front range - matches logo's angular peaks */}
             <polygon
-              points="0,120 20,72 60,85 100,52 150,72 190,45 240,70 280,54 330,74 370,40 410,64 450,56 500,68 500,120"
+              points="0,100 20,70 60,82 100,50 150,70 190,45 240,68 280,52 330,72 370,40 410,62 450,55 500,65 500,100"
               fill="url(#mountain-grad-1)"
             />
           </svg>
