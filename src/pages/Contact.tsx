@@ -70,7 +70,7 @@ const ContactPage = () => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-foreground">Email</p>
-                        <p className="text-sm text-muted-foreground">hello@mcwebdev.com</p>
+                        <p className="text-sm text-muted-foreground">hudsonvalleywebdev@gmail.com</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
