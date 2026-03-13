@@ -79,7 +79,7 @@ const ContactPage = () => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-foreground">Phone / Text</p>
-                        <p className="text-sm text-muted-foreground">(845) 555-0123</p>
+                        <p className="text-sm text-muted-foreground">845-720-0963</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
