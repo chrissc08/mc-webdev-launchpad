@@ -1,12 +1,7 @@
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import SectionHeader from "@/components/shared/SectionHeader";
 
 const projects = [
-  { title: "Hudson Valley Barbershop", industry: "Barbershop", result: "3x more bookings within 30 days", image: "https://images.unsplash.com/photo-1585747860019-8629e8b2fae1?w=600&h=400&fit=crop" },
-  { title: "OC Towing & Recovery", industry: "Towing", result: "First page on Google for local keywords", image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop" },
-  { title: "Bella's Italian Kitchen", industry: "Restaurant", result: "Online orders up 150% after launch", image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop" },
-  { title: "Warwick Plumbing Co.", industry: "Trades", result: "5-star credibility, more quote requests", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop" },
+  { title: "Prestige Towing", industry: "Towing & Recovery", result: "Professional website for Sullivan County's leading towing company", image: "/src/assets/prestige-towing.jpg", url: "https://prestige-towing.com" },
 ];
 
 const FeaturedWork = () => {
@@ -19,29 +14,29 @@ const FeaturedWork = () => {
           description="Real projects for real local businesses."
         />
 
-        <div className="grid sm:grid-cols-2 gap-6">
-          {projects.map((p) => (
-            <div key={p.title} className="group rounded-2xl overflow-hidden bg-background border border-border hover:shadow-lg transition-all duration-300">
-              <div className="aspect-[3/2] overflow-hidden">
-                <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              </div>
-              <div className="p-6">
-                <span className="text-xs font-semibold uppercase tracking-wider text-primary">{p.industry}</span>
-                <h3 className="font-heading text-lg font-bold text-foreground mt-1">{p.title}</h3>
-                <p className="text-sm text-muted-foreground mt-1">{p.result}</p>
-                <Link to="/work" className="inline-block mt-4 text-sm font-semibold text-primary hover:underline">
-                  View Project →
-                </Link>
-              </div>
+        <div className="max-w-xl mx-auto">
+          <a href={projects[0].url} target="_blank" rel="noopener noreferrer" className="group rounded-2xl overflow-hidden bg-background border border-border hover:shadow-lg transition-all duration-300 block">
+            <div className="aspect-[3/2] overflow-hidden">
+              <img src={projects[0].image} alt={projects[0].title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
             </div>
-          ))}
+            <div className="p-6">
+              <span className="text-xs font-semibold uppercase tracking-wider text-primary">{projects[0].industry}</span>
+              <h3 className="font-heading text-lg font-bold text-foreground mt-1">{projects[0].title}</h3>
+              <p className="text-sm text-muted-foreground mt-1">{projects[0].result}</p>
+              <span className="inline-block mt-4 text-sm font-semibold text-primary group-hover:underline">
+                View Site →
+              </span>
+            </div>
+          </a>
         </div>
 
         <div className="text-center mt-10">
           <p className="text-muted-foreground mb-4">Want one like this?</p>
-          <Link to="/contact">
-            <Button variant="hero" size="lg">Get a Free Mockup</Button>
-          </Link>
+          <a href="/contact" className="inline-block">
+            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-11 px-8 bg-primary text-primary-foreground hover:bg-primary/90">
+              Get a Free Mockup
+            </button>
+          </a>
         </div>
       </div>
     </section>
