@@ -1,17 +1,12 @@
-import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SectionHeader from "@/components/shared/SectionHeader";
-import { Link } from "react-router-dom";
 
 const projects = [
   { title: "Prestige Towing", industry: "Auto", summary: "24/7 Commercial Towing & Recovery website built for Sullivan County's trusted towing experts", tags: ["Design", "Development", "SEO"], image: "/src/assets/prestige-towing.jpg", url: "https://prestige-towing.com" },
 ];
 
 const WorkPage = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
-
-  const filtered = activeFilter === "All" ? projects : projects.filter((p) => p.industry === activeFilter);
 
   return (
     <>
