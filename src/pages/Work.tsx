@@ -4,15 +4,8 @@ import Footer from "@/components/layout/Footer";
 import SectionHeader from "@/components/shared/SectionHeader";
 import { Link } from "react-router-dom";
 
-const filters = ["All", "Barbershops", "Auto", "Restaurants", "Trades", "Other"];
-
 const projects = [
-  { title: "Hudson Valley Barbershop", industry: "Barbershops", summary: "Modern booking site that tripled appointments", tags: ["Design", "Development", "SEO"], image: "https://images.unsplash.com/photo-1585747860019-8629e8b2fae1?w=600&h=400&fit=crop" },
-  { title: "OC Towing & Recovery", industry: "Auto", summary: "24/7 towing service site with lead capture", tags: ["Design", "Lead Gen", "Speed"], image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop" },
-  { title: "Bella's Italian Kitchen", industry: "Restaurants", summary: "Restaurant site with online ordering integration", tags: ["Design", "CMS", "SEO"], image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop" },
-  { title: "Warwick Plumbing Co.", industry: "Trades", summary: "Professional site generating 5x more quote requests", tags: ["Design", "Forms", "SEO"], image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop" },
-  { title: "Monroe Auto Detailing", industry: "Auto", summary: "Sleek showcase site with booking integration", tags: ["Design", "Development"], image: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=600&h=400&fit=crop" },
-  { title: "Greenwood Landscaping", industry: "Trades", summary: "Portfolio-driven site with seasonal service pages", tags: ["Design", "CMS", "Portfolio"], image: "https://images.unsplash.com/photo-1558904541-efa843a96f01?w=600&h=400&fit=crop" },
+  { title: "Prestige Towing", industry: "Auto", summary: "24/7 Commercial Towing & Recovery website built for Sullivan County's trusted towing experts", tags: ["Design", "Development", "SEO"], image: "/src/assets/prestige-towing.jpg", url: "https://prestige-towing.com" },
 ];
 
 const WorkPage = () => {
