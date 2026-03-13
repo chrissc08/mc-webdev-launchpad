@@ -33,16 +33,16 @@ const WorkPage = () => {
                     <p className="text-sm text-muted-foreground mt-1">{p.summary}</p>
                     <div className="flex flex-wrap gap-1.5 mt-3">
                       {p.tags.map((t) => (
-                        <span key={t} className="px-2 py-0.5 text-xs rounded-md bg-accent text-muted-foreground">{t}</span>
-                      ))}
-                    </div>
-                    <Link to="/contact" className="inline-block mt-4 text-sm font-semibold text-primary hover:underline">
-                      View Project →
-                    </Link>
-                  </div>
+                    <span key={t} className="px-2 py-0.5 text-xs rounded-md bg-accent text-muted-foreground">{t}</span>
+                  ))}
                 </div>
-              ))}
-            </div>
+                <span className="inline-block mt-4 text-sm font-semibold text-primary group-hover:underline">
+                  View Site →
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
           </div>
         </section>
       </main>
