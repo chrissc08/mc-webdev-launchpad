@@ -70,7 +70,7 @@ const ContactPage = () => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-foreground">Email</p>
-                        <p className="text-sm text-muted-foreground">hello@mcwebdev.com</p>
+                        <p className="text-sm text-muted-foreground">hudsonvalleywebdev@gmail.com</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -79,7 +79,7 @@ const ContactPage = () => {
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-foreground">Phone / Text</p>
-                        <p className="text-sm text-muted-foreground">(845) 555-0123</p>
+                        <p className="text-sm text-muted-foreground">845-720-0963</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -89,6 +89,7 @@ const ContactPage = () => {
                       <div>
                         <p className="text-sm font-semibold text-foreground">Service Area</p>
                         <p className="text-sm text-muted-foreground">Hudson Valley, NY & surrounding areas</p>
+                        <p className="text-sm text-muted-foreground mt-1">Mon–Fri: 9am–5pm</p>
                       </div>
                     </div>
                   </div>
