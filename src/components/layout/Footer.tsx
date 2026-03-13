@@ -67,9 +67,10 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold mb-4 text-sm uppercase tracking-wider text-secondary-foreground/50">Contact</h4>
             <ul className="space-y-2 text-sm text-secondary-foreground/70">
-              <li>hello@hudsonvalleywebdev.com</li>
-              <li>(845) 555-0123</li>
+              <li>hudsonvalleywebdev@gmail.com</li>
+              <li>845-720-0963</li>
               <li>Hudson Valley, NY</li>
+              <li>Mon–Fri: 9am–5pm</li>
             </ul>
             {/* Social placeholder */}
             <div className="flex gap-3 mt-4">

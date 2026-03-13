@@ -89,6 +89,7 @@ const ContactPage = () => {
                       <div>
                         <p className="text-sm font-semibold text-foreground">Service Area</p>
                         <p className="text-sm text-muted-foreground">Hudson Valley, NY & surrounding areas</p>
+                        <p className="text-sm text-muted-foreground mt-1">Mon–Fri: 9am–5pm</p>
                       </div>
                     </div>
                   </div>
