@@ -25,27 +25,10 @@ const WorkPage = () => {
               description="Real websites for real Hudson Valley businesses."
             />
 
-            {/* Filters */}
-            <div className="flex flex-wrap justify-center gap-2 mb-10">
-              {filters.map((f) => (
-                <button
-                  key={f}
-                  onClick={() => setActiveFilter(f)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                    activeFilter === f
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-accent text-muted-foreground hover:text-foreground"
-                  }`}
-                >
-                  {f}
-                </button>
-              ))}
-            </div>
-
             {/* Grid */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filtered.map((p) => (
-                <div key={p.title} className="group rounded-2xl overflow-hidden bg-background border border-border hover:shadow-lg transition-all duration-300">
+              {projects.map((p) => (
+                <a key={p.title} href={p.url} target="_blank" rel="noopener noreferrer" className="group rounded-2xl overflow-hidden bg-background border border-border hover:shadow-lg transition-all duration-300 block">
                   <div className="aspect-[3/2] overflow-hidden">
                     <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                   </div>
