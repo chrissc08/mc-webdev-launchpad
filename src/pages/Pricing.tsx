@@ -93,7 +93,7 @@ const PricingPage = () => {
               description="Most sites start at $900. Final pricing depends on pages + features."
             />
 
-            <div className="grid sm:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {packages.map((pkg) => (
                 <div
                   key={pkg.name}

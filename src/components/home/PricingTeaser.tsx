@@ -40,7 +40,7 @@ const PricingTeaser = () => {
       <div className="container-tight">
         <SectionHeader
           badge="Pricing"
-          title="Websites starting at $900"
+          title="Websites starting at $500"
           description="Simple, transparent pricing for Hudson Valley businesses."
         />
 
