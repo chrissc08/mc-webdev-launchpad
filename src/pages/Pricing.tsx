@@ -8,6 +8,21 @@ import { Check } from "lucide-react";
 const packages = [
   {
     name: "Starter",
+    price: "$500",
+    desc: "Our most basic package for small businesses launching a website",
+    features: [
+      "1 page",
+      "No navigation bar",
+      "Up to 8 elements",
+      "Mobile-responsive",
+      "Contact info display",
+      "Ideal for menu displays or redirects",
+    ],
+    missing: ["Contact form", "Multiple pages", "SEO setup", "Revisions included"],
+    popular: false,
+  },
+  {
+    name: "Standard",
     price: "$900",
     desc: "For small brochure / portfolio sites",
     features: [
@@ -78,7 +93,7 @@ const PricingPage = () => {
               description="Most sites start at $900. Final pricing depends on pages + features."
             />
 
-            <div className="grid sm:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {packages.map((pkg) => (
                 <div
                   key={pkg.name}
