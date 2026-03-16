@@ -60,24 +60,24 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden fixed inset-0 top-44 bg-background z-40 flex flex-col">
-          <nav className="flex flex-col items-center justify-center flex-1 gap-6">
+        <div className="md:hidden fixed inset-x-0 top-44 bg-background z-40 border-b border-border shadow-lg">
+          <nav className="flex flex-col px-6 py-6 gap-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={() => setMobileOpen(false)}
-                className={`text-2xl font-heading font-semibold transition-colors ${
+                className={`py-3 text-lg font-body transition-colors border-b border-border last:border-0 ${
                   location.pathname === item.path
-                    ? "text-primary"
-                    : "text-foreground hover:text-primary"
+                    ? "text-primary font-medium"
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {item.label}
               </Link>
             ))}
-            <Link to="/contact" onClick={() => setMobileOpen(false)}>
-              <Button variant="hero" size="lg">Get a Free Mockup</Button>
+            <Link to="/contact" onClick={() => setMobileOpen(false)} className="mt-4">
+              <Button variant="hero" size="lg" className="w-full">Get a Free Mockup</Button>
             </Link>
           </nav>
         </div>
