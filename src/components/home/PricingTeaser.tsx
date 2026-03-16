@@ -16,14 +16,14 @@ const packages = [
     price: "$900",
     description: "For small brochure & portfolio sites",
     features: ["3–5 pages", "Contact form", "Mobile-first design", "Basic speed optimization", "Unlimited revisions"],
-    popular: false,
+    popular: true,
   },
   {
     name: "Growth",
     price: "$1,500",
     description: "For lead-gen & growing businesses",
     features: ["5–10 pages", "Lead-gen sections & opt-in forms", "Basic on-page SEO", "Speed optimization", "Unlimited revisions"],
-    popular: true,
+    popular: false,
   },
   {
     name: "Pro + CMS",
