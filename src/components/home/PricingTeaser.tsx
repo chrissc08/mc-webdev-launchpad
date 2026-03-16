@@ -6,6 +6,13 @@ import { Check } from "lucide-react";
 const packages = [
   {
     name: "Starter",
+    price: "$500",
+    description: "Our most basic package for small businesses",
+    features: ["1 page", "No navigation bar", "Up to 8 elements", "Mobile-responsive", "Ideal for menu displays"],
+    popular: false,
+  },
+  {
+    name: "Standard",
     price: "$900",
     description: "For small brochure & portfolio sites",
     features: ["3–5 pages", "Contact form", "Mobile-first design", "Basic speed optimization", "1 round of revisions"],
