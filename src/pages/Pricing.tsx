@@ -75,7 +75,7 @@ const packages = [
 
 const addons = [
   "Extra pages — $100–$200/page",
-  "Copywriting — Starting at $300",
+  
   "Branding / logo refresh — Starting at $400",
   "Monthly maintenance plan — $99/month",
   "Booking integrations (Booksy, Calendly, etc.) — $150–$300",
