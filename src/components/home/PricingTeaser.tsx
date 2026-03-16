@@ -81,6 +81,12 @@ const PricingTeaser = () => {
             </div>
           ))}
         </div>
+
+        <div className="text-center mt-8">
+          <Link to="/pricing">
+            <Button variant="link">Compare Packages →</Button>
+          </Link>
+        </div>
       </div>
     </section>
   );
