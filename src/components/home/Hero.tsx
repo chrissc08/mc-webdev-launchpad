@@ -43,7 +43,7 @@ const Hero = () => {
             </div>
 
             <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-sm font-semibold text-foreground">
-              Starting at <span className="text-primary text-lg font-bold">$900</span>
+              Starting at <span className="text-primary text-lg font-bold">$500</span>
             </div>
           </div>
 
