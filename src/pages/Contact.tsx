@@ -9,8 +9,20 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name") as string;
+    const business = formData.get("business") as string;
+    const email = formData.get("email") as string;
+    const phone = formData.get("phone") as string;
+    const message = formData.get("message") as string;
+
+    const subject = encodeURIComponent(`Free Mockup Request from ${name} — ${business}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nBusiness: ${business}\nEmail: ${email}\nPhone: ${phone || "N/A"}\n\nMessage:\n${message}`
+    );
+    window.open(`mailto:hudsonvalleywebdev@gmail.com?subject=${subject}&body=${body}`, "_self");
     setSubmitted(true);
   };
 
