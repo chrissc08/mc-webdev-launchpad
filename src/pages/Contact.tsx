@@ -9,8 +9,20 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name") as string;
+    const business = formData.get("business") as string;
+    const email = formData.get("email") as string;
+    const phone = formData.get("phone") as string;
+    const message = formData.get("message") as string;
+
+    const subject = encodeURIComponent(`Free Mockup Request from ${name} — ${business}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nBusiness: ${business}\nEmail: ${email}\nPhone: ${phone || "N/A"}\n\nMessage:\n${message}`
+    );
+    window.open(`mailto:hudsonvalleywebdev@gmail.com?subject=${subject}&body=${body}`, "_self");
     setSubmitted(true);
   };
 
@@ -44,14 +56,14 @@ const ContactPage = () => {
                 ) : (
                   <form onSubmit={handleSubmit} className="mt-8 space-y-4">
                     <div className="grid sm:grid-cols-2 gap-4">
-                      <Input placeholder="Your name" required />
-                      <Input placeholder="Business name" required />
+                      <Input name="name" placeholder="Your name" required />
+                      <Input name="business" placeholder="Business name" required />
                     </div>
                     <div className="grid sm:grid-cols-2 gap-4">
-                      <Input type="email" placeholder="Email" required />
-                      <Input type="tel" placeholder="Phone (optional)" />
+                      <Input name="email" type="email" placeholder="Email" required />
+                      <Input name="phone" type="tel" placeholder="Phone (optional)" />
                     </div>
-                    <Textarea placeholder="Tell us about your business, goals, and what you're looking for..." rows={5} />
+                    <Textarea name="message" placeholder="Tell us about your business, goals, and what you're looking for..." rows={5} />
                     <Button variant="hero" size="xl" type="submit" className="w-full sm:w-auto">
                       Send My Free Mockup Request
                     </Button>
