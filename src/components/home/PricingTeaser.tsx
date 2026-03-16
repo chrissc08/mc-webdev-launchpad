@@ -16,7 +16,7 @@ const packages = [
     price: "$900",
     description: "For small brochure & portfolio sites",
     features: ["3–5 pages", "Contact form", "Mobile-first design", "Basic speed optimization", "Unlimited revisions"],
-    popular: false,
+    popular: true,
   },
   {
     name: "Growth",
