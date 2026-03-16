@@ -9,21 +9,38 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+  
     const formData = new FormData(e.currentTarget);
-    const name = formData.get("name") as string;
-    const business = formData.get("business") as string;
-    const email = formData.get("email") as string;
-    const phone = formData.get("phone") as string;
-    const message = formData.get("message") as string;
-
-    const subject = encodeURIComponent(`Free Mockup Request from ${name} — ${business}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nBusiness: ${business}\nEmail: ${email}\nPhone: ${phone || "N/A"}\n\nMessage:\n${message}`
-    );
-    window.open(`mailto:hudsonvalleywebdev@gmail.com?subject=${subject}&body=${body}`, "_self");
-    setSubmitted(true);
+  
+    const payload = {
+      name: formData.get("name"),
+      business: formData.get("business"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+    };
+  
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+  
+      if (!res.ok) {
+        throw new Error("Failed to send");
+      }
+  
+      setSubmitted(true);
+      e.currentTarget.reset();
+    } catch (err) {
+      alert("Something went wrong. Please try again.");
+      console.error(err);
+    }
   };
 
   return (
