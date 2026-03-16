@@ -36,7 +36,7 @@ const packages = [
       "Unlimited revisions",
     ],
     missing: ["CMS integration", "Lead-gen sections", "Blog setup", "Priority support"],
-    popular: false,
+    popular: true,
   },
   {
     name: "Growth",
