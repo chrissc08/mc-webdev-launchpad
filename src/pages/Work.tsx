@@ -1,9 +1,11 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SectionHeader from "@/components/shared/SectionHeader";
+import prestigeWork from "@/assets/prestigework.png";
+
 
 const projects = [
-  { title: "Prestige Towing", industry: "Auto", summary: "24/7 Commercial Towing & Recovery website built for Sullivan County's trusted towing experts", tags: ["Design", "Development", "SEO"], image: "/src/assets/prestige-towing.jpg", url: "https://prestige-towing.com" },
+  { title: "Prestige Towing", industry: "Auto", summary: "24/7 Commercial Towing & Recovery website built for Sullivan County's trusted towing experts", tags: ["Design", "Development", "SEO"], image: prestigeWork, url: "https://prestige-towing.com" },
 ];
 
 const WorkPage = () => {

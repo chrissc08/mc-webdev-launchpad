@@ -1,7 +1,9 @@
 import SectionHeader from "@/components/shared/SectionHeader";
+import prestigeWork from "@/assets/prestigework.png";
+
 
 const projects = [
-  { title: "Prestige Towing", industry: "Towing & Recovery", result: "Professional website for Sullivan County's leading towing company", image: "/src/assets/prestige-towing.jpg", url: "https://prestige-towing.com" },
+  { title: "Prestige Towing", industry: "Towing & Recovery", result: "Professional website for Sullivan County's leading towing company", image: prestigeWork, url: "https://prestige-towing.com" },
 ];
 
 const FeaturedWork = () => {
