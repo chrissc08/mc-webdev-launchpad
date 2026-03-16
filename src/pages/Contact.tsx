@@ -56,14 +56,14 @@ const ContactPage = () => {
                 ) : (
                   <form onSubmit={handleSubmit} className="mt-8 space-y-4">
                     <div className="grid sm:grid-cols-2 gap-4">
-                      <Input placeholder="Your name" required />
-                      <Input placeholder="Business name" required />
+                      <Input name="name" placeholder="Your name" required />
+                      <Input name="business" placeholder="Business name" required />
                     </div>
                     <div className="grid sm:grid-cols-2 gap-4">
-                      <Input type="email" placeholder="Email" required />
-                      <Input type="tel" placeholder="Phone (optional)" />
+                      <Input name="email" type="email" placeholder="Email" required />
+                      <Input name="phone" type="tel" placeholder="Phone (optional)" />
                     </div>
-                    <Textarea placeholder="Tell us about your business, goals, and what you're looking for..." rows={5} />
+                    <Textarea name="message" placeholder="Tell us about your business, goals, and what you're looking for..." rows={5} />
                     <Button variant="hero" size="xl" type="submit" className="w-full sm:w-auto">
                       Send My Free Mockup Request
                     </Button>
