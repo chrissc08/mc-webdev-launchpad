@@ -53,7 +53,7 @@ const packages = [
       "Unlimited revisions",
     ],
     missing: ["CMS integration", "Blog setup"],
-    popular: true,
+    popular: false,
   },
   {
     name: "Pro + CMS",

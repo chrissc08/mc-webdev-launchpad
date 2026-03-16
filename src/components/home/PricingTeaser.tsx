@@ -23,7 +23,7 @@ const packages = [
     price: "$1,500",
     description: "For lead-gen & growing businesses",
     features: ["5–10 pages", "Lead-gen sections & opt-in forms", "Basic on-page SEO", "Speed optimization", "Unlimited revisions"],
-    popular: true,
+    popular: false,
   },
   {
     name: "Pro + CMS",

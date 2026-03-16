@@ -94,12 +94,6 @@ const ContactPage = () => {
                     </div>
                   </div>
 
-                  <div className="mt-8 pt-6 border-t border-border">
-                    <p className="text-sm font-semibold text-foreground mb-2">Prefer to talk?</p>
-                    <Button variant="outline" className="w-full">
-                      Book a Call
-                    </Button>
-                  </div>
                 </div>
               </div>
             </div>
