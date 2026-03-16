@@ -44,7 +44,7 @@ const PricingTeaser = () => {
           description="Simple, transparent pricing for Hudson Valley businesses."
         />
 
-        <div className="grid sm:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {packages.map((pkg) => (
             <div
               key={pkg.name}
