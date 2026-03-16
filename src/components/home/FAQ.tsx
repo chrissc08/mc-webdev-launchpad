@@ -12,7 +12,7 @@ const faqs = [
   { q: "How long does a website take?", a: "Most projects take 1–3 weeks from approved mockup to launch, depending on the scope and number of pages." },
   { q: "Can you connect booking or contact forms?", a: "Absolutely. We can integrate tools like Calendly, Booksy, or custom contact/quote request forms that send leads directly to your email." },
   { q: "What is CMS integration?", a: "CMS (Content Management System) lets you update your site's content — like blog posts, portfolio items, or testimonials — without needing a developer." },
-  { q: "Do you do SEO?", a: "We include basic on-page SEO setup: meta tags, page titles, heading structure, image optimization, and local schema markup." },
+  { q: "Do you do SEO?", a: "We include basic on-page SEO setup: meta tags, page titles, heading structure, and image optimization." },
   { q: "Do I own the website?", a: "Yes. You own all the code, content, and design assets we create for you." },
   { q: "What if I need changes after launch?", a: "We offer optional maintenance plans for ongoing updates. Or, if it's a simple change, just reach out and we'll handle it." },
 ];
