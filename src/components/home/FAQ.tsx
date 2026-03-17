@@ -8,7 +8,7 @@ import {
 
 const faqs = [
   { q: 'What do I get for "starting at $900"?', a: "Our Starter package includes a 3–5 page mobile-first website with a contact form, speed optimization, and clean, responsive design. Perfect for brochure-style sites." },
-  { q: "How does the free mockup work?", a: "Tell us about your business, and we'll design an interactive demo of your site. You can see it, click through it, and request changes — all before committing." },
+  { q: "How does the free mockup work?", a: "Tell us about your business, and we'll design a free demo of your site. You can see it, look through it, and request changes — all before committing." },
   { q: "How long does a website take?", a: "Most projects take 1–3 weeks from approved mockup to launch, depending on the scope and number of pages." },
   { q: "Can you connect booking or contact forms?", a: "Absolutely. We can integrate tools like Calendly, Booksy, or custom contact/quote request forms that send leads directly to your email." },
   { q: "What is CMS integration?", a: "CMS (Content Management System) lets you update your site's content — like blog posts, portfolio items, or testimonials — without needing a developer." },
